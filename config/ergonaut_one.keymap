@@ -17,17 +17,15 @@
             compatible = "zmk,behavior-macro";
             label = "MOD_CHORD";
             #binding-cells = <0>;
-            bindings = <
-                &macro_press  &kp LSHFT
-                &macro_press  &kp LCTL
-                &macro_press  &kp LALT
-                &macro_press  &kp LGUI
-
-                &macro_release &kp LGUI
-                &macro_release &kp LALT
-                &macro_release &kp LCTL
-                &macro_release &kp LSHFT
-            >;
+            bindings =
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_release>,
+                <&kp LCTL>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
     };
 };
@@ -43,12 +41,6 @@
     };
 
     macros {
-        raycast_chord: raycast_chord {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT &kp LCTRL &kp LALT &kp LCMD>;
-            label = "RAYCAST_CHORD";
-        };
     };
 
     keymap {
@@ -57,10 +49,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt LGUI RBKT    &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y        &kp U            &kp I        &kp O    &kp P     &kp LBKT
-&mt LCTRL GRAVE  &kp A  &kp S  &kp D        &kp F            &kp G        &kp H        &kp J            &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LALT MINUS   &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N        &kp M            &kp COMMA    &kp DOT  &kp FSLH  &mt RALT BSLH
-                               &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &raycasst_macro  &lt RSE DEL
+&mt LGUI RBKT    &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y        &kp U       &kp I        &kp O    &kp P     &kp LBKT
+&mt LCTRL GRAVE  &kp A  &kp S  &kp D        &kp F            &kp G        &kp H        &kp J       &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LALT MINUS   &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N        &kp M       &kp COMMA    &kp DOT  &kp FSLH  &mt RALT BSLH
+                               &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mod_chord  &lt RSE DEL
             >;
         };
 
