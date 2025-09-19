@@ -25,15 +25,7 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_press>,
-                <&kp LGUI>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_release>,
-                <&kp LALT>,
-                <&macro_release>,
-                <&kp LEFT_CONTROL>,
-                <&macro_release>,
-                <&kp LSHFT>;
+                <&kp LGUI>;
         };
     };
 };
