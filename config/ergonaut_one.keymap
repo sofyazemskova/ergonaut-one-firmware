@@ -2,9 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#include Keys <config/UK v1.3.2.h>
-#include Keys <config/ru v1.3.2.h>
-
 #define DEF 0
 #define LWR 1
 #define RSE 2
