@@ -75,10 +75,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt LGUI RBKT    &kp Q  &kp W  &kp E      &kp R                   &kp Z      &kp Z      &kp U                   &kp I      &kp O    &kp P     &kp LBKT
-&mt LCTRL GRAVE  &kp A  &kp S  &kp D      &kp F                   &kp G      &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LALT MINUS   &kp Z  &kp X  &kp C      &kp V                   &kp B      &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
-                               &lt 3 TAB  &rayc_behavior 0 SPACE  &lt 2 RET  &lt 2 ESC  &mt LEFT_COMMAND SPACE  &lt 3 DEL
+&mt LGUI RBKT    &kp Q  &kp W  &kp E      &kp R                                              &kp Z      &kp Z      &kp U                   &kp I      &kp O    &kp P     &kp LBKT
+&mt LCTRL GRAVE  &kp A  &kp S  &kp D      &kp F                                              &kp G      &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LALT MINUS   &kp Z  &kp X  &kp C      &kp V                                              &kp B      &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
+                               &lt 3 TAB  &rayc_behavior 0 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 2 RET  &lt 2 ESC  &mt LEFT_COMMAND SPACE  &lt 3 DEL
             >;
         };
 
