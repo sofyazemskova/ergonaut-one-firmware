@@ -29,7 +29,7 @@
         mission_control_combo: mission_control_combo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp UP>;
+            bindings = <&kp LC(UP)>;
             label = "MISSION_CONTROL_COMBO";
         };
     };
@@ -73,33 +73,28 @@
         };
 
         vol_up {
-            bindings = <&kt LS(C_VOLUME_UP)>;
+            bindings = <&kp C_VOLUME_UP>;
             key-positions = <7 8>;
         };
 
         vol_down {
-            bindings = <&kt C_VOLUME_DOWN>;
+            bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <19 20>;
         };
 
         vol_mute {
-            bindings = <&kt C_MUTE>;
+            bindings = <&kp C_MUTE>;
             key-positions = <31 32>;
         };
 
         bright_up {
-            bindings = <&kt C_BRIGHTNESS_INC>;
+            bindings = <&kp C_BRIGHTNESS_INC>;
             key-positions = <4 3>;
         };
 
         bright_down {
-            bindings = <&kt C_BRIGHTNESS_DEC>;
+            bindings = <&kp C_BRIGHTNESS_DEC>;
             key-positions = <16 15>;
-        };
-
-        bright_min {
-            bindings = <&kt C_BRIGHTNESS_MINIMUM>;
-            key-positions = <28 27>;
         };
 
         mission_control {
