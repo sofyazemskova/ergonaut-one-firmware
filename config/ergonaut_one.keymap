@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
 #include "ru150.h"
 #include "uk150.h"
 
@@ -123,10 +122,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt LGUI RBKT                               &kp Q  &kp W  &kp E      &kp R                                              &kp T      &kp Y      &kp U                   &kp I      &kp O    &kp P     &kp LBKT
-&mt LCTRL C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp A  &kp S  &kp D      &kp F                                              &kp G      &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LALT MINUS                              &kp Z  &kp X  &kp C      &kp V                                              &kp B      &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
-                                                          &lt 3 TAB  &rayc_behavior 0 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 2 RET  &lt 2 ESC  &mt LEFT_COMMAND SPACE  &lt 3 DEL
+&mt LGUI RBKT   &kp Q  &kp W  &kp E      &kp R                                              &kp T      &kp Y      &kp U                   &kp I      &kp O    &kp P     &kp LBKT
+&to 5           &kp A  &kp S  &kp D      &kp F                                              &kp G      &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LALT MINUS  &kp Z  &kp X  &kp C      &kp V                                              &kp B      &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
+                              &lt 3 TAB  &rayc_behavior 0 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 2 RET  &lt 2 ESC  &mt LEFT_COMMAND SPACE  &lt 3 DEL
             >;
         };
 
@@ -166,6 +165,15 @@
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_CLR
 &sys_reset   &none           &none         &none         &none         &none         &none         &none         &none         &none         &none           &sys_reset
                                            &trans        &none         &trans        &none         &trans        &trans
+            >;
+        };
+
+        canary_layer {
+            bindings = <
+&trans  &kp W  &kp L  &kp Y   &kp P   &kp B   &kp Z   &kp F   &kp O     &kp U      &kp APOS  &trans
+&to 0   &kp C  &kp R  &kp S   &kp T   &kp G   &kp M   &kp N   &kp E     &kp I      &kp A     &trans
+&trans  &kp Q  &kp J  &kp V   &kp D   &kp K   &kp X   &kp H   &kp FSLH  &kp COMMA  &kp DOT   &trans
+                      &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
