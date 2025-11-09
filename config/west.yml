@@ -1,5 +1,5 @@
-#include <config/Keys_RU_Phonetic_v150.h>
-#include <config/Keys_UK_v150.h>
+#include <config/ru150.h>
+#include <config/uk150.h>
 
 manifest:
   remotes:
