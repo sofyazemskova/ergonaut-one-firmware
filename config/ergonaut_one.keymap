@@ -170,10 +170,10 @@
 
         canary_layer {
             bindings = <
-&trans  &kp W  &kp L  &kp Y   &kp P      &kp B   &kp Z   &kp F   &kp O     &kp U      &kp APOS  &trans
-&to 0   &kp C  &kp R  &kp S   &kp T      &kp G   &kp M   &kp N   &kp E     &kp I      &kp A     &trans
-&trans  &kp Q  &kp J  &kp V   &kp D      &kp K   &kp X   &kp H   &kp FSLH  &kp COMMA  &kp DOT   &trans
-                      &trans  &kp SPACE  &trans  &trans  &trans  &trans
+&trans  &kp W  &kp L  &kp Y   &kp P      &kp B   &kp Z         &kp F          &kp O       &kp U      &kp APOS  &trans
+&to 0   &kp C  &kp R  &kp S   &kp T      &kp G   &kp M         &kp N          &kp E       &kp I      &kp A     &trans
+&trans  &kp Q  &kp J  &kp V   &kp D      &kp K   &kp X         &kp H          &kp FSLH    &kp COMMA  &kp DOT   &trans
+                      &trans  &kp SPACE  &trans  &kp KP_ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
     };
