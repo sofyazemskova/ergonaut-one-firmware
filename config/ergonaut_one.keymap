@@ -3,9 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#include <Keys_RU_Phonetic_v150.h>
-#include <Keys_UK_v150.h>
-
 #define DEF 0
 #define LWR 1
 #define RSE 2
