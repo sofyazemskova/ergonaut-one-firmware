@@ -42,7 +42,7 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <3 2>;
+            if-layers = <1 2>;
             then-layer = <3>;
         };
     };
@@ -67,46 +67,38 @@
         BOOT_left {
             bindings = <&bootloader>;
             key-positions = <0 24 12 25 13 1>;
+            layers = <0>;
         };
 
         BOOT_right {
             bindings = <&bootloader>;
             key-positions = <10 11 23 22 34 35>;
+            layers = <0>;
         };
 
         vol_up {
             bindings = <&kp C_VOLUME_UP>;
-            key-positions = <7 8>;
+            key-positions = <10 9>;
         };
 
         vol_down {
             bindings = <&kp C_VOLUME_DOWN>;
-            key-positions = <19 20>;
+            key-positions = <9 10>;
         };
 
         vol_mute {
             bindings = <&kp C_MUTE>;
-            key-positions = <31 32>;
+            key-positions = <34 33>;
         };
 
         bright_up {
             bindings = <&kp C_BRIGHTNESS_INC>;
-            key-positions = <4 3>;
+            key-positions = <1 2>;
         };
 
         bright_down {
             bindings = <&kp C_BRIGHTNESS_DEC>;
-            key-positions = <16 15>;
-        };
-
-        mission_control_l {
-            bindings = <&mission_control_combo>;
-            key-positions = <5 17>;
-        };
-
-        zmkstudio_unlock {
-            bindings = <&studio_unlock>;
-            key-positions = <5 4 3 2>;
+            key-positions = <13 14>;
         };
 
         mission_conrol_r {
@@ -122,7 +114,7 @@
             display-name = "MAIN";
             bindings = <
 &kp TAB               &kp Q  &kp W  &kp E      &kp R                   &kp T      &kp Y      &kp U                        &kp I      &kp O    &kp P     &kp LBKT
-&mt GLOBE LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F                   &kp G      &kp H      &kp J                        &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LEFT_SHIFT GLOBE  &kp A  &kp S  &kp D      &kp F                   &kp G      &kp H      &kp J                        &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
 &kp LEFT_CONTROL      &kp Z  &kp X  &kp C      &kp V                   &kp B      &kp N      &kp M                        &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
                                     &lt 2 TAB  &mt SPACE LEFT_COMMAND  &lt 1 RET  &lt 1 ESC  &mt RIGHT_COMMAND BACKSPACE  &lt 2 DEL
             >;
