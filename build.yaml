@@ -1,5 +1,5 @@
 include:
-  - board: seeeduino_xiao
+  - board: xiao_ble
     shield: ergonaut_one_left
 
   - board: xiao_ble
