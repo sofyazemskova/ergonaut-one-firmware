@@ -88,10 +88,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp TAB                  &kp W  &kp L  &kp Y      &kp P                   &kp B      &kp Z      &kp F                    &kp O      &kp U   &trans  &trans
-&mt LEFT_SHIFT CAPSLOCK  &kp C  &kp R  &kp S      &kp T                   &kp G      &kp M      &kp N                    &kp E      &kp I   &kp A   &trans
-&kp LEFT_CONTROL         &kp Q  &kp J  &kp V      &kp D                   &kp K      &kp X      &kp H                    &trans     &trans  &trans  &trans
-                                       &lt 2 TAB  &mt LEFT_GUI LG(SPACE)  &lt 1 RET  &lt 1 ESC  &mt RIGHT_GUI BACKSPACE  &lt 2 DEL
+&kp TAB                  &kp W  &kp L  &kp Y      &kp P               &kp B      &kp Z      &kp F                    &kp O      &kp U   &trans  &trans
+&mt LEFT_SHIFT CAPSLOCK  &kp C  &kp R  &kp S      &kp T               &kp G      &kp M      &kp N                    &kp E      &kp I   &kp A   &trans
+&kp LEFT_CONTROL         &kp Q  &kp J  &kp V      &kp D               &kp K      &kp X      &kp H                    &trans     &trans  &trans  &trans
+                                       &lt 2 TAB  &mt LEFT_GUI SPACE  &lt 1 RET  &lt 1 ESC  &mt RIGHT_GUI BACKSPACE  &lt 2 DEL
             >;
         };
 
