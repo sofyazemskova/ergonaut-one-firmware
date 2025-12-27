@@ -34,6 +34,14 @@
             bindings = <&kp LC(UP)>;
             label = "MISSION_CONTROL_COMBO";
         };
+
+        layout_change: layout_change_eng {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPS>, <&macro_wait_time 200>, <&tog 4>;
+
+            label = "LAYOUT_CHANGE_ENG";
+        };
     };
 };
 
@@ -88,10 +96,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp TAB                  &kp W  &kp L  &kp Y      &kp P               &kp B      &kp Z      &kp F                   &kp O      &kp U   &trans  &trans
-&mt LEFT_SHIFT CAPSLOCK  &kp C  &kp R  &kp S      &kp T               &kp G      &kp M      &kp N                   &kp E      &kp I   &kp A   &trans
-&kp LEFT_CONTROL         &kp Q  &kp J  &kp V      &kp D               &kp K      &kp X      &kp H                   &trans     &trans  &trans  &trans
-                                       &lt 2 TAB  &mt LEFT_GUI SPACE  &lt 1 RET  &lt 1 ESC  &mt LEFT_GUI BACKSPACE  &lt 2 DEL
+&kp TAB           &kp W  &kp L  &kp Y      &kp P               &kp B      &kp Z      &kp F                   &kp O      &kp U   &trans  &trans
+&layout_change    &kp C  &kp R  &kp S      &kp T               &kp G      &kp M      &kp N                   &kp E      &kp I   &kp A   &trans
+&kp LEFT_CONTROL  &kp Q  &kp J  &kp V      &kp D               &kp K      &kp X      &kp H                   &trans     &trans  &trans  &trans
+                                &lt 2 TAB  &mt LEFT_GUI SPACE  &lt 1 RET  &lt 1 ESC  &mt LEFT_GUI BACKSPACE  &lt 2 DEL
             >;
         };
 
@@ -125,12 +133,13 @@
             >;
         };
 
-        canary_layer {
+        rus_layer {
+            display-name = "rus";
             bindings = <
-&trans  &kp W  &kp L  &kp Y   &kp P      &kp B   &kp Z         &kp F          &kp O       &kp U      &kp APOS  &trans
-&to 0   &kp C  &kp R  &kp S   &kp T      &kp G   &kp M         &kp N          &kp E       &kp I      &kp A     &trans
-&trans  &kp Q  &kp J  &kp V   &kp D      &kp K   &kp X         &kp H          &kp FSLH    &kp COMMA  &kp DOT   &kp A
-                      &trans  &kp SPACE  &trans  &kp KP_ENTER  &kp BACKSPACE  &kp DELETE
+&kp TAB           &kp W  &kp L  &kp Y      &kp P               &kp B      &kp Z      &kp F                   &kp O      &kp U   &trans  &trans
+&layout_change    &kp C  &kp R  &kp S      &kp T               &trans     &kp M      &kp N                   &kp E      &kp I   &kp A   &trans
+&kp LEFT_CONTROL  &kp Q  &kp J  &kp V      &kp D               &kp K      &kp X      &kp H                   &trans     &trans  &trans  &trans
+                                &lt 2 TAB  &mt LEFT_GUI SPACE  &lt 1 RET  &lt 1 ESC  &mt LEFT_GUI BACKSPACE  &lt 2 DEL
             >;
         };
     };
