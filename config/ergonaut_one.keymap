@@ -38,7 +38,7 @@
         layout_change: layout_change_eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPS>, <&macro_wait_time 200>, <&tog 4>;
+            bindings = <&kp CAPS>, <&macro_wait_time 200>, <&tog 0>;
 
             label = "LAYOUT_CHANGE_ENG";
         };
@@ -59,9 +59,9 @@
     };
 
     behaviors {
-        rayc_behavior: rayc_behavior {
+        ht_raycast: ht_raycast {
             compatible = "zmk,behavior-hold-tap";
-            label = "RAYC_BEHAVIOR";
+            label = "HT_RAYCAST";
             bindings = <&raycast_chord>, <&kp>;
 
             #binding-cells = <2>;
@@ -96,10 +96,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp TAB           &kp W  &kp L  &kp Y      &kp P               &kp B      &kp Z      &kp F                   &kp O      &kp U   &trans  &trans
-&layout_change    &kp C  &kp R  &kp S      &kp T               &kp G      &kp M      &kp N                   &kp E      &kp I   &kp A   &trans
-&kp LEFT_CONTROL  &kp Q  &kp J  &kp V      &kp D               &kp K      &kp X      &kp H                   &trans     &trans  &trans  &trans
-                                &lt 2 TAB  &mt LEFT_GUI SPACE  &lt 1 RET  &lt 1 ESC  &mt LEFT_GUI BACKSPACE  &lt 2 DEL
+&kp ESCAPE          &kp Q  &kp W  &kp E                                                  &kp R               &kp T                 &kp Y      &kp U                   &kp I      &kp O    &kp P     &kp LBKT
+&ht_raycast 0 TAB   &kp A  &kp S  &kp D                                                  &kp F               &kp G                 &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &kp SQT
+&sk LG(LEFT_SHIFT)  &kp Z  &kp X  &kp C                                                  &kp V               &kp B                 &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                                  &mt LEFT_CONTROL LG(C_AC_NEXT_KEYBOARD_LAYOUT_SELECT)  &mt LEFT_GUI SPACE  &mt LG(LEFT_ALT) RET  &lt 1 ESC  &mt LEFT_GUI BACKSPACE  &lt 2 DEL
             >;
         };
 
@@ -130,16 +130,6 @@
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_CLR
 &sys_reset   &none           &none         &none         &none         &none         &none         &none         &none         &none         &none           &sys_reset
                                            &trans        &none         &trans        &none         &trans        &trans
-            >;
-        };
-
-        rus_layer {
-            display-name = "rus";
-            bindings = <
-&kp TAB           &kp Q  &kp W  &kp E      &kp R               &kp T      &kp Y      &kp U                   &kp I      &kp O    &kp P     &kp LBKT
-&layout_change    &kp A  &kp S  &kp D      &kp F               &kp G      &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &kp V               &kp B      &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                                &lt 2 TAB  &mt LEFT_GUI SPACE  &lt 1 RET  &lt 1 ESC  &mt LEFT_GUI BACKSPACE  &lt 2 DEL
             >;
         };
     };
